@@ -1,0 +1,15 @@
+1)
+setwd("C:/Users/IBM_ADMIN/Desktop")
+mydata=read.csv("titanic3.csv")
+
+s=mydata$ï..pclass
+
+boxplot(mydata$fare ~ mydata$pclass)
+
+
+
+2)
+library(ggplot2)
+ggplot(titanic_clean, aes(Survived,fill = Survived))+
+  geom_bar()+
+  ggtitle("Barplot to represent Passenger Count who Survived vs who Died")
